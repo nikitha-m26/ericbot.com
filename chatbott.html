@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bott</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/fa31fc4f8b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100;1,200&display=swap" rel="stylesheet">
+    </head>
+<body>
+   <section class="sub-header">
+       <nav>
+           <div class="nav-links">
+               <ul>
+                   <li><a href="index.html">HOME</a></li>
+                   <li><a href="about.html">ABOUT</a></li>
+                   <li><a href="schemes.html">SCHEMES</a></li>
+                   <li><a href="chatbott.html">CHAT WITH ME</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>
+               </ul>
+           </div>
+       </nav>
+       <h1>Chat With Me</h1>
+       <h3>Hi I'm Eric.</h3>
+   </section>
+
+   <div class="box">
+    <div style="text-align:center;" class="top">
+    
+    </div>
+    <div style="text-align:center;" class="mid">
+        <div style="text-align:center;"  class="chat">
+            
+            <p  id="chatLog">Type Below</p>
+            
+        </div>
+        </div>
+        <div style="text-align:center;"  class="input">
+            <input type="text" id="userBox"onkeydown="if(event.keyCode == 13){ talk() }"placeholder="say Hi to Eric">
+    </div>
+
+
+</div>
+
+<script>
+    function talk(){
+        var know ={
+          
+
+            "Hi":"Hello,I am Eric.",
+            "How are you?":"Great, and you?",
+            "I'm good":"Good to hear that.",
+            
+            "women empowerment":"Women Empowerment Schemes-Beti Bacho,Beti Padho,One Stop Center Scheme, Working Womens Hostel(WWH)",
+            
+            "beti bacho beti padho":"Government launched the Beti Bachao Beti Padhao (BBBP) on 22nd January, 2015 at Panipat in Haryana.It is a tri-ministerial effort of Ministries of Women and Child Development, Health & Family Welfare and Human Resource Development. The objectives of the Scheme are as under:To prevent gender biased sex selective eliminationTo ensure survival and protection of the girl childTo ensure education and participation of the girl childTo save daughter child from killing by people.Also, secure their future by giving her education and secure life.Avoid doing sex differentiation between the girl and the boy child.Give them the right education like boys.",
+            "one stop center scheme":"It is a subscheme of umbrella scheme for National Mission for Empowerment of Women includinIndira Gandhi Mattritav Sahyaog Yojana.One stop centre, will be established across the country to provide integrated support and assistance under one roof to women affected by violence, both in private and public spaces.The scheme is funded through Nirbhaya Fund and the central government provides 100% financial assistance to the stategovernments /Union Territories administrations.One stop centres will be integrated with women helplines to provide following services-Emergency response and rescue services.Medical assistance.Assistance to women in lodging the FIR.Psycho- social support and counselling.Legal aid and counselling.ShelterVideo conferencing facility.",
+            "working womens hostel":"The scheme is intended to benefit-Working women who may be single, widowed, divorced, separated, married but whose husband or immediate familydoes not reside in the same city/area. Particular preference may be given to disadvantaged sections of the society along with provisions for physically challenged. Women who are under training for jobs provided the total training perioddoes not exceed 1 year. Girls upto age of 18 years and boys upto age of 5 years with working mothers will be provided accommodation with their mothers. Working mothers may also avail the day care centre facility under the scheme.The scheme isintended to promote availability of safe and conveniently located accommodation for working women with day care facility for children wherever possible in urban, semi urban, or even rural areas where employment opportunities exist.",
+
+            "scholarship schemes":"Which one would do like to know about- puc,degree and masters.",
+            
+            "puc":"NMMS, Vidya Siri Scholarship, Jindal Scholarship",
+            "NMMS":" National Means-Cum-Merit Scholarship is a Centrally sponsored scholarship scheme. It is implemented by the Departmentof School Education & Literacy under the Ministry of Human Resource Development with the objective to financially support the meritorious students of economically weaker sections of the society. NMMS encourages disadvantaged students to continue their studies at the secondary level by offering a scholarship amount of INR 12,000 per annum. Every year, this MCM scholarship is made active during the month of November and almost 100,000 scholarships are disbursed among bright students.The candidates who wish to apply for this MCM scholarship must be regular students studying in class 9 after getting clear promotion from class 8 with a score of at least 55% or equivalent grades.The candidates must be pursuing education from Government/Local Body/Government-aided schools.For continuation of scholarship in higher secondary school, the candidate must score at least 60% marks in class 10 board exam.For continuing the scholarship in class 12, the scholarship awardee must get clear promotion from class 11 in the first attemptitself with a score of 55% marks or equivalent. For students belonging to SC/ST category, a relaxation of 5% is given in marks.The candidates’ annual family income should not be more than INR 1.5 Lakh.",
+            "Vidya Siri Scholarship":"Should be a citizen of India and a permanent resident of Karnataka.His/her caste Should be included in the list of other Backward Classes as notified by the Government of India or State Government.Students pursuing post-matric courses in government / local Insititutions / Aided Insititutions / non-aided recognised private institutions, affiliated to the statutory universities of Karnataka.The Gross Annual Income of the student, father / mother / guardian family should be within the limits set forth below.Rs.2.50 lakh for students of Category-I, Rs. 1.00 lakhs for students of Category-2A, 3A and 3B. Students must be in rural areas and at least 5 km for away from the college where they are studying.However, if the student's residence place is in the city / town but attending colleges in a different city / town, he / she is eligible for this facility.",
+            "jindal scholarship":"Sitaram Jindal Scholarship is a merit-cum-means based scholarship scheme. Started by the Sitaram Jindal Foundation, a charitable organisation in Bengaluru, the Jindal scholarship aims to provide financial assistance to deserving meritorious candidates who belong to underprivileged families. The candidates need to be studying in class 11 to post-graduation in order to be eligible for Sitaram Jindal Scholarship. The scholarship covers Polytechnic and Diploma courses in technical education as well. The selected students can avail up to INR 2,500 per month scholarship amount under this scholarship scheme.Sitaram Jindal Scholarship is segregated into different categories as per the courses pursued by the students. The value of the scholarship amounts up to INR 2,500 per month which is received by students having different qualifications.",
+
+            
+            "degree":"L'Oreal, G.P Birla, CLP India",
+            "L'Oreal":"L'Oréal India invites applications from young women who have passed Class 12 in 2020 and wish to pursue higher education in science, for L'Oréal India For Young Women In Science Scholarships 2020. The scholarships will be granted to promising young women who are economically disadvantaged. Selected women scholars will receive financial aid to cover college fees for graduation studies in any scientific field (Pure Sciences/Applied Sciences/Engineering/Medical, etc.) at a recognized college or university in India.L'Oréal India is offering this scholarship with an objective to support and encourage young women for pursuing higher education in science stream. The programme was instituted in 2003 and it has consistently helped young women to pursue scientific studies. Passed standard XII (Science) from India. Graduated in the current academic year (March 2015).Minimum 85% in PCB / PCM, Minimum 17 years of age, 50 Awards of Rs 2.5 Lakhs each",
+            "G.P Birla":"G. P. Birla Educational Foundation is offering G. P. Birla Scholarship 2020 to meritorious students from West Bengal,who have passed Class 12 examination in 2020. The selected candidate will receive a scholarship worth INR 50,000 per year and other benefits. The scholarship can be availed by students pursuing courses in any stream including Science, Commerce, Arts, Engineering, Medicine, Architecture etc.To be eligible, an applicant must:Be a citizen of West Bengal. Have passed the Class 12 examination with 80% marks or more from State Board or 85% marks or more from the Central Board. Have an annual family income of less than INR 3,00,000 per year. Be in need of financial help to pursue further studies. Be continuing studies in any stream including Arts, Science, Medicine, Engineering, Architecture, Law, Commerce, or professional courses like Company Secretaryship, Cost Accountancy and Chartered Accountancy course from a recognized Indian University/Institution.",
+            "CLP India":"CLP India Scholarship Scheme is CLP India’s flagship education intervention program. The scheme applies to community catchment areas around CLP India business locations and is aimed primarily at providing financial support to aspiring students for their 10+2, vocational, graduation and further studies, with added emphasis on supporting girl students. The scheme entails the provision of financial support in form of non-returnable scholarship in tranches to help and support the education and related costs incurred by the students. In 2019 calendar year, CLP India intends to aid 850 selected students across all CLP RE Asset locations. Applicant students must score 50% marks in their previous academic annual exam. Applicant students must be from community catchment areas around all CLP India RE Assets business locations (Maharashtra, Gujarat, Madhya Pradesh, Karnataka, Tamilnadu, Telangana, Rajasthan).Applicant students must secure admission and pursue their study in 10th to 12th, Graduation, Post-Graduation, Diploma, ITI, Vocational  training.The scholarship applicant family must not own a four wheeler, Air-condition or LED TV.",
+            
+            "masters":"AICTE, S.N Bose, GyanDhan.",
+            "AICTE":"The All India Council for Technical Education (AICTE) is an apex national-level advisory body for imparting technical education in India. It not only provides accreditation to colleges and institutions involved in technical education but also offers a number of scholarships and fellowships to students who are willing to pursue a technical degree course. An AICTE scholarship helps both meritorious and deserving students to pursue higher education without any financial constraints. The students who have obtained qualifying marks in GATE/GPAT can apply.The students must have taken admission in the first year offering ME/ MTech/ M.Pharma./ M.Arch. courses at an AICTE recognised institution/college.Having a general saving account is also mandatory for the students.Candidates pursuing part-time courses cannot apply.",
+            "S.N Bose":"SN Bose Scholarship, also known as SN Bose Scholars Program, is a student exchange program between top institutions of India and the United States initiated by the Science & Engineering Board (SERB), Department of Science and Technology (DST), Government of India, the Indo-US Science and Technology Forum (IUSSTF) and WINStep Forward. Started with the aim to nurture and encourage the next generation of innovators and thinkers, SN Bose Scholarship helps students experience world-class research facilities and interact with other dynamic students.The applicants must be Indian citizens pursuing bachelor’s or master’s degree program from a recognised educational institution in India.The applicants must be studying Atmospheric & Earth Sciences, Chemical Sciences, Engineering Sciences, Mathematical & Computational Sciences and Physical Sciences.",
+            "GyanDhan":"The GyanDhan Scholarship is a one-time award that will be given to a student at the beginning of the academic year. The scholarship amount is INR 1 lakh. Irrespective of the course and the country, one student will be awarded a scholarship for their postgraduate program. The scholarship is merit-based and will be presented to the student with excellent academic records and caliber.Started with an aim to make abroad higher education more accessible to students, GyanDhan has helped tens of thousands of students in selecting the right financing option. In continuation of our efforts towards our aim, we are launching the GyanDhan 2021 Scholarship. This scholarship of INR 1 Lakh will be awarded to 1 student. Students who want to pursue a 2-year postgraduate course in the US, Canada, UK, Australia, Ireland, New Zealand & Germany. Students who are in the process of applying or have applied but have not yet received an admission letter can also apply for the scholarship.The student must be an Indian resident with an undergrad degree from an Indian institute. If the student is planning to take an education loan, the application for the same must start via Gyandhan in one of the partner lenders. Our partner lenders are SBI, BOB, Axis Bank, ICICI Bank, Avanse, Auxilo, Incred, Credila & MPower Financing.",
+            "Bye":"Bye, Have a great day",
+           
+            
+        };
+        var user = document.getElementById('userBox').value;
+        document.getElementById('chatLog').innerHTML = user + "<br>";
+        if(user in know){
+            document.getElementById('chatLog').innerHTML = know[user] + "<br>";  
+        }
+        else{
+            document.getElementById('chatLog').innerHTML = "I do not understand"; 
+        }
+    }
+    </script>
+
+   <!--------footer---------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>This project is enriched by Nikitha . M and Manmit Kaur, students of Maharani Lakshmi Ammani College for Women
+            <br>under the guidance of Professor Shruthi N . G and Professor Dr. Vijaylakshmi of BCA Department.</p>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+    </section>
+</body>
+</html>
